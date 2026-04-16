@@ -65,7 +65,7 @@ def quiz_generator(images, difficulty):
 
     Generate exactly 15 multiple‑choice questions. Each question must include:
     - A clear question.
-    - Four answer options labeled A), B), C), D).
+    - Four answer options labeled A), B), C), D). in different line
     - After the options, state the correct answer in the format: **Correct Answer: X**
 
     Use markdown to format the quiz neatly (e.g., **Question 1**, bullet points for options).
