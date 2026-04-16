@@ -61,15 +61,25 @@ def quiz_generator(images, difficulty):
     Difficulty can be 'Easy', 'Medium', or 'Hard'.
     """
     prompt = f"""
-    You are a teacher creating a {difficulty} difficulty quiz from the notes shown in the images.
+     You are a teacher creating a {difficulty} difficulty quiz from the notes shown in the images.
 
-    Generate exactly 15 multiple‑choice questions. Each question must include:
-    - A clear question.
-    - Four answer options labeled A), B), C), D). in different line
-    - After the options, state the correct answer in the format: **Correct Answer: X**
+    Generate exactly 15 multiple‑choice questions. Format each question exactly like the example below:
 
-    Use markdown to format the quiz neatly (e.g., **Question 1**, bullet points for options).
-    Only base questions on content actually present in the images.
+    **Question 1**  
+    What is the capital of France?  
+    A) Berlin  
+    B) Madrid  
+    C) Paris  
+    D) Rome  
+
+    **Correct Answer: C**
+
+    Follow these rules strictly:
+    - Start each question with "**Question X**" on its own line.
+    - Put the question text on the next line.
+    - Put each option (A, B, C, D) on its **own separate line**.
+    - Leave a blank line between the last option and the "**Correct Answer:**" line.
+    - Only base questions on content actually present in the images.
     """
 
     contents = []
