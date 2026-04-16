@@ -63,7 +63,7 @@ def quiz_generator(images, difficulty):
     prompt = f"""
     You are a teacher creating a {difficulty} difficulty quiz from the notes shown in the images.
 
-    Generate exactly 3 multiple‑choice questions. Each question must include:
+    Generate exactly 15 multiple‑choice questions. Each question must include:
     - A clear question.
     - Four answer options labeled A), B), C), D).
     - After the options, state the correct answer in the format: **Correct Answer: X**
