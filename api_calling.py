@@ -13,10 +13,6 @@ my_api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=my_api_key)
 
 def note_generator(images):
-    """
-    Generate structured notes from uploaded images.
-    Uses gemini-1.5-flash (free tier).
-    """
     prompt = """
     You are an expert note-taker. Look at the provided handwritten or printed notes and create a clear, well-organized summary.
 
@@ -48,7 +44,7 @@ def audio_transcription(text):
     Convert text to speech using gTTS.
     Returns an in-memory audio buffer.
     """
-    # Remove markdown characters for cleaner speech
+    #markdown characters cleaner
     clean_text = text.replace("#", "").replace("*", "").replace("`", "").replace("$", "")
     clean_text = clean_text.replace("-", " ").replace("_", " ")
 

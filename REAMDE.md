@@ -56,8 +56,9 @@ All from just **uploading up to 3 images** of your notes!
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/algoabrar/note-summary-quiz-generator.git
-   cd note-summary-quiz-generator
+   git clone https://github.com/AlgoAbrar/ai-note-summary-quiz-generator.git
+
+   cd ai-note-summary-quiz-generator
    ```
 
 2. **Create a virtual environment (recommended)**
@@ -76,11 +77,11 @@ All from just **uploading up to 3 images** of your notes!
    ```
    GEMINI_API_KEY=your_actual_api_key_here
    ```
-   > 🔒 **Never commit this file to GitHub!** It's already listed in `.gitignore`.
+   **Never commit this file to GitHub!** It's already listed in `.gitignore`.
 
 ---
 
-## 🏃 Running the App
+## Running the App
 
 Once everything is installed and your `.env` file is ready, run:
 
@@ -92,7 +93,7 @@ The app will open automatically in your browser at `http://localhost:8501`.
 
 ---
 
-## 📖 How to Use
+## How to Use
 
 1. **Upload Images**  
    In the sidebar, click *"Upload your note photos"* and select up to 3 images (JPG, JPEG, PNG).
@@ -110,14 +111,14 @@ The app will open automatically in your browser at `http://localhost:8501`.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
 ├── app.py                 # Streamlit frontend
-├── api_calling.py         # Backend functions (Gemini, gTTS)
+├── api_calling.py         # Backend functions
 ├── requirements.txt       # Python dependencies
-├── .env                   # Your API key (ignored by git)
+├── .env                   # Your API key
 ├── .gitignore
 └── README.md
 ```
@@ -135,19 +136,19 @@ The app will open automatically in your browser at `http://localhost:8501`.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request if you have ideas for improvements.
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Google for the generous free tier of Gemini API.
 - The Streamlit team for an amazing framework.
@@ -155,7 +156,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Happy learning! 📚✨
-```
-
-Simply copy everything above and paste it into your `README.md` file. Remember to replace `your-username` in the clone URL with your actual GitHub username, and consider adding a screenshot named `screenshot.png` to your repository if you'd like the image placeholder to work.
+Happy learning!
